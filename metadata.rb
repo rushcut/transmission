@@ -9,3 +9,5 @@ version          "2.0.3"
 %w{ openssl build-essential }.each do |cb|
   depends cb
 end
+
+depends 'apt'

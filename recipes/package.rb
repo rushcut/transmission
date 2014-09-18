@@ -25,6 +25,8 @@ transmission_pkgs = value_for_platform(
   "default" => ["transmission", "transmission-cli", "transmission-daemon"]
 )
 
+include_recipe 'apt'
+
 transmission_pkgs.each do |pkg|
   package pkg do
     action :install
